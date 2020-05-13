@@ -20,8 +20,10 @@ class CreateManagersTable extends Migration
             $table->string('email');
             $table->string('user_type');
             $table->unsignedBigInteger('users_id');
+            $table->unsignedBigInteger('companies_id');
 
-            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');;
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('companies_id')->references('id')->on('companies');
             $table->timestamps();
         });
     }

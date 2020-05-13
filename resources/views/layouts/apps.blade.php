@@ -25,14 +25,10 @@
   </head>
   <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html">E-Procurement</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
-        <li class="app-search">
-          <input class="app-search__input" type="search" placeholder="Search">
-          <button class="app-search__button"><i class="fa fa-search"></i></button>
-        </li>
         <!--Notification Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
           <ul class="app-notification dropdown-menu dropdown-menu-right">
@@ -89,8 +85,8 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">John Doe</p>
-          <p class="app-sidebar__user-designation">Frontend Developer</p>
+          <p class="app-sidebar__user-name">Abdul Meque</p>
+          <p class="app-sidebar__user-designation">Manager</p>
         </div>
       </div>
       <ul class="app-menu">

@@ -18,6 +18,9 @@ class CreateAnouncesTable extends Migration
             $table->string('title');
             $table->string('fileDesc');
             $table->string('description');
+            $table->unsignedBigInteger('anounces_id');
+
+            $table->foreign('anounces_id')->references('id')->on('anounces');
             $table->timestamps();
         });
     }
