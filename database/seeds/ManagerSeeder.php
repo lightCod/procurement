@@ -11,8 +11,6 @@ class ManagerSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Manager::class, 50)->create()->each(function ($user) {
-            $user->posts()->save(factory(App\Post::class)->make());
-        });
+        factory(App\Manager::class, 50)->create();
     }
 }

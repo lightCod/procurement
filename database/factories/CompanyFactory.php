@@ -2,16 +2,16 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\Company;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Company::class, function (Faker $faker) {
     return [
         'name' => $faker->company,
-        'nuit' => $faker->creditCardNumber,
-        'adrees' => $faker->adress,
+        'nuit' => $faker->numberBetween($min = 1000000, $max = 9999999),
+        'adrees' => $faker->address,
         'landLine' => $faker->phoneNumber,
-        'mobilePhone' => $faker->cellNumber,
+        'mobilePhone' => $faker->phoneNumber,
         'e-mail' => $faker->email
     ];
 });

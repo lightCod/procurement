@@ -16,11 +16,12 @@ class CreateAnouncesTable extends Migration
         Schema::create('anounces', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->integer('access');
             $table->string('fileDesc');
             $table->string('description');
-            $table->unsignedBigInteger('anounces_id');
+            $table->unsignedBigInteger('companies_id');
 
-            $table->foreign('anounces_id')->references('id')->on('anounces');
+            $table->foreign('companies_id')->references('id')->on('companies');
             $table->timestamps();
         });
     }
