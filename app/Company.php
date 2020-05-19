@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
     public function anounce(){
-        return $this->belongsToMany('App\Anounce', 'company_anounce', 'company_id', 'compete', 'anounce_id');
+        return $this->hasMany('App\Anounce');
     }
 
     public function manager(){
-        return $this->hasmany('App\Manager');
+        return $this->hasMany('App\Manager');
     }
 }

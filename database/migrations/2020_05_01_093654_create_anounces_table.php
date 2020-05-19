@@ -24,6 +24,7 @@ class CreateAnouncesTable extends Migration
             $table->foreign('companies_id')->references('id')->on('companies');
             $table->timestamps();
         });
+
     }
 
     /**
